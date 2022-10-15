@@ -2,13 +2,15 @@
 
 :root{
   --background: #fffffe;
+  --dark-bg: #402e9e;
   --text-color: #2b2c34;
+  --light-text: #fffffe;
   --logo-color: #402e9e;
   --button: #6246ea;
-  --button-text: #fffffe;
   --light-btn: #fffffe;
   --light-btn-text: #6246ea;
   --highlight: #6246ea;
+  --highlight-variant: #7f66f8;
   --secondary: #d1d1e9;
   --tertiary: #e45858;
   --text-font: 'Lato', sans-serif;
@@ -23,6 +25,7 @@
   --btn-border: 1px solid #6246ea;
   --br: 5px;
   --box-shadow: 0 10px 10px 10px rgba(0,0,0, 0.2);
+  --box-shadow-btn: 0 3px 3px 3px rgba(0,0,0, 0.2);
 }
 
 /* reset */
@@ -76,18 +79,36 @@ li:hover, a:hover, td:hover{
 
 .btn {
   background: var(--button);
-  color: var(--button-text);
+  color: var(--light-text);
   border: var(--btn-border);
   border-radius: var(--br);
   padding: 10px 25px;
 }
+
+.btn:hover{
+  filter: brightness(120%);
+  box-shadow: var(--box-shadow-btn);
+}
+
+.light-btn{
+  background: var(--light-btn);
+  color: var(--light-btn-text);
+}
+
+.light-btn:hover{
+  background-color: var(--highlight-variant);
+  color: var(--light-text);
+  border-color: var(--highlight-variant);
+  filter: brightness(100%);
+}
+
 
 /* Header */
 #header {
   width: 100%;
   display: flex; 
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 #header-content {
@@ -112,7 +133,53 @@ li:hover, a:hover, td:hover{
 }
 
 #signin-btn {
-  background: var(--light-btn);
-  color: var(--light-btn-text);
   margin-right: 15px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  line-height: 1.5em;
+}
+
+#main-footer {
+  background: var(--dark-bg);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 0.9em;
+}
+
+th{
+  font-weight: 700;
+}
+
+th, td{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#legal{
+  text-align: center;
+  font-size: 0.8em;
+  padding: 20px;
+}
+
+.privacy-list{
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.privacy-list-item {
+  display: inline;
+  width: 275px;
 }
