@@ -106,6 +106,7 @@ li:hover, a:hover, td:hover{
   filter: brightness(120%);
   box-shadow: var(--box-shadow-btn);
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .light-btn{
