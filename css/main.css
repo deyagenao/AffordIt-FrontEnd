@@ -105,6 +105,7 @@ li:hover, a:hover, td:hover{
 .btn:hover{
   filter: brightness(120%);
   box-shadow: var(--box-shadow-btn);
+  cursor: pointer;
 }
 
 .light-btn{
@@ -154,7 +155,6 @@ li:hover, a:hover, td:hover{
 
 #header-content {
   width: 85%;
-  /* max-width: 1024px; */
   display: flex;
   justify-content: space-between;
   align-items: center;

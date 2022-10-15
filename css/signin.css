@@ -1,0 +1,66 @@
+#header{
+  border: none;
+}
+
+#header-content {
+  padding-bottom: 30px;
+  border-bottom: var(--border);
+  justify-content: center;
+}
+
+#signin-content{
+  height: 70vh;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly; 
+  padding-top: 70px;
+}
+
+#signin-content h2 {
+  line-height: 2.5em;
+}
+
+#signin-form-container, #create-account-container {
+  width: 90%;
+}
+
+.divider {
+  width: 1px;
+  margin: 0 40px;
+  height: 80%;
+  background: #d3d7dd;
+}
+
+.form-label, .form-input{
+  display: block;
+  width: 80%;
+}
+
+.form-label{
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  height: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: var(--br);
+  border: var(--border);
+}
+
+#signin-btn, #create-acc-btn {
+  width: 73%;
+  margin-top: 27px;
+}
+
+#form-footer{
+  text-align: center;
+  padding: 25px 0;
+  border-top: var(--border);
+}
+
+
