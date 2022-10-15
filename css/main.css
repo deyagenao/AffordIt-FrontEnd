@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap');
+
 
 :root{
   --background: #fffffe;
@@ -17,7 +18,8 @@
   --text-size: 1em;
   --logo-size: 2em;
   --title-size: 4em;
-  --subheading-size: 3em;
+  --heading-size: 2.5em;
+  --subheading-size: 2em;
   --lightweight: 300;
   --bold: 700;
   --xbold: 900;
@@ -64,6 +66,20 @@ body{
   width: 100vw;
 }
 
+h1{
+  font-size: var(--title-size);
+  font-weight: var(--bold);
+}
+
+h2{
+  font-size: var(--heading-size);
+}
+
+h3 {
+  font-size: var(--subheading-size);
+  margin-bottom: 10px;
+}
+
 a, a:visited {
   text-decoration: none;
   color: var(--main-font-color);
@@ -80,6 +96,7 @@ li:hover, a:hover, td:hover{
 .btn {
   background: var(--button);
   color: var(--light-text);
+  text-align: center;
   border: var(--btn-border);
   border-radius: var(--br);
   padding: 10px 25px;
@@ -103,12 +120,36 @@ li:hover, a:hover, td:hover{
 }
 
 
+/* underline hover transition TO DO: Edit for length */
+/* .link{
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
+} */
+
 /* Header */
 #header {
-  width: 100%;
   display: flex; 
   justify-content: center;
   padding-top: 70px;
+  padding-bottom: 30px;
+  border-bottom: var(--border);
 }
 
 #header-content {
@@ -128,6 +169,10 @@ li:hover, a:hover, td:hover{
   color: var(--logo-color);
 }
 
+#logo a:hover{
+  color: var(--highlight);
+}
+
 #header-content nav li{
   display: inline;
 }
@@ -138,9 +183,6 @@ li:hover, a:hover, td:hover{
 
 /* Footer */
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
   line-height: 1.5em;
 }
 
@@ -172,6 +214,7 @@ th, td{
   text-align: center;
   font-size: 0.8em;
   padding: 20px;
+  border-top: var(--border); 
 }
 
 .privacy-list{
@@ -183,3 +226,4 @@ th, td{
   display: inline;
   width: 275px;
 }
+
