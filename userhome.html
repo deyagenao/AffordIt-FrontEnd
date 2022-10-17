@@ -10,12 +10,6 @@
   <link rel="stylesheet" href="css/userviews.css">
 </head>
 <body>
-  <!-- <header id="header">
-    <div id="header-content">
-      <div id="logo"><a href="index.html"><i class="fa-solid fa-hand-holding-dollar"></i>  Afford It </a></div>
-      <div class="nav-list-item btn light-btn" id="signin-btn"><a href="signin.html">Log Out <i class="fa-solid fa-right-from-bracket"></i></a></div>  
-    </div>
-  </header> -->
   <!-- side navigation -->
   <nav id="user-nav">
     <div id="nav-logo"><a href="index.html"><i class="fa-solid fa-hand-holding-dollar"></i>  Afford It </a></div>
@@ -32,7 +26,7 @@
   <main class="main-user-content">
     <h1 class="user-content-title">Home</h1>
     <h2 class="user-content-subtitle"><i class="fa-solid fa-arrow-right"></i> Account Summary</h2>
-    <div class="user-content-container">
+    <div class="user-acc-container">
       <div id="no-account" hidden>
         <p>No accounts to display</p>
         <div class="btn" id="show-acc-form">Start Budgeting!</div>
@@ -62,11 +56,23 @@
           <div class="btn" id="submit-new-acc">Submit</div>
         </form>
       </div>
-      <div id="account-summary">
-        <h3>Monthly Expenses: <span id="monthly-ex-sum">$2,750.55</span></h3>
-        <h3>Monthly Income: <span id="monthly-in-sum">$3,250.45</span></h3>
-        <h3 class="sum-message surplus">Way to go! You are earning <span id="amount">$499.90</span> more than you spend each month.</h3>
-        <h3 class="sum-message deficit" hidden>Uh oh. You are spending <span id="amount">$499.90</span> more than you earn each month.</h3>
+      <div id="account-view">
+        <form action="" id="select-account">
+          <select name="account" class="form-input" id="select-acc-input">
+            <option value="accountNo" selected>Family</option>
+            <option value="new-acc">Add New Account</option>
+          </select>
+          <div class="btn" id="select-acc-btn">Go</div>
+        </form>
+        
+        <p id="acc-display">Your Account Number: <span id="account-no">fff800</span></p>
+        <div id="account-summary">
+          <h3>Monthly Expenses: <span id="monthly-ex-sum">$2,750.55</span></h3>
+          <h3>Monthly Income: <span id="monthly-in-sum">$3,250.45</span></h3>
+          <h3 class="sum-message surplus">Way to go! You are earning <span id="amount">$499.90</span> more than you spend each month.</h3>
+          <h3 class="sum-message deficit" hidden>Uh oh. You are spending <span id="amount">$499.90</span> more than you earn each month.</h3>
+        </div>
+        
       </div>
     </div>
   </main>

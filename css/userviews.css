@@ -68,7 +68,7 @@ body{
   font-size: var(--subheading-size);
 }
 
-.user-content-container {
+.user-acc-container {
   background: var(--secondary);
   width: 90%;
   min-height: 65vh;
@@ -126,6 +126,7 @@ body{
 
 #account-summary{
   text-align: center;
+  padding-top: 30px;
 }
 #account-summary span {
   font-weight: 700;
@@ -133,4 +134,14 @@ body{
 
 .sum-message{
   padding-top: 30px;
+}
+
+#select-acc-input{
+  display: inline;
+  height: 45px;
+  width: 175px;
+}
+
+#select-acc-btn {
+  display: inline
 }
