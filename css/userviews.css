@@ -76,6 +76,7 @@ body{
   margin-top: 30px;
   padding: 15px;
   border-radius: var(--br);
+  box-shadow: var(--box-shadow);
 }
 
 #no-account p{ 
@@ -130,6 +131,11 @@ body{
 }
 #account-summary span {
   font-weight: 700;
+}
+#account-summary .btn {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .sum-message{
