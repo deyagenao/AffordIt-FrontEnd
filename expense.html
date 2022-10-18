@@ -25,9 +25,49 @@
   </nav>
   <main class="main-user-content">
     <h1 class="user-content-title">Expenses</h1>
-    <h2 class="user-content-subtitle" id="month-year"><i class="fa-solid fa-arrow-right"></i> October 2022</h2>
-    <div class="expense-table">
-      
+    <h2 class="user-content-subtitle" id="month-year"><i class="fa-solid fa-arrow-right"></i> October 2022 Total: $2,750.55</h2>
+    <div class="expense-table-container">
+      <h4>Account Expenses</h4>
+      <table class="fin-table" id="expense-table">
+        <tr>
+          <td class="fin-name">Rent</td>
+          <td class="fin-category">Rent/ Mortgage</td>
+          <td class="fin-amount">1200.00</td>
+          <td class="fin-frequency">Monthly</td>
+          <td class="edit-fin">
+            <div class="btn"><a href=""></a><i class="fa-solid fa-pen-to-square"></i></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fin-name">Cell Phone</td>
+          <td class="fin-category">Utilities</td>
+          <td class="fin-amount">48.00</td>
+          <td class="fin-frequency">Monthly</td>
+          <td class="edit-fin">
+            <div class="btn"><a href=""></a><i class="fa-solid fa-pen-to-square"></i></div>
+          </td>
+        </tr>
+        
+      </table>
+    </div>
+    <div class="add-expense">
+      <p>Add New Expense</p>
+      <form action="" class="fin-form" id="add-expense-form">
+        <input type="text" class="form-input horizontal-form" name="name" placeholder="Expense Name">
+        <select class="form-select form-input horizontal-form" id="expense-category">
+          <option value="rentMortgage">Rent/ Mortgage</option>
+          <option value="utilities">Utilities</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" class="form-input horizontal-form" name="amount" placeholder="Expense Amount">
+        <select class="form-input form-select horizontal-form" id="expense-frequency">
+          <option value="weekly">Weekly</option>
+          <option value="biweekly">Biweekly</option>
+          <option value="monthly" selected>Monthly</option>
+          <option value="annually">Annually</option>
+        </select>
+        <button type="submit" class="btn">Save</button>
+      </form>
     </div>
   </main>
 </body>
